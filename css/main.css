@@ -82,10 +82,6 @@ header h3 {
   font-size: 21px;
 }
 
-.subtitle{
-  font-family: monospace;
-  text-align: center;
-}
 
 /*----------------------------------
   Background Grid
@@ -106,24 +102,13 @@ header h3 {
 
 .fixed-top {
   position: absolute;
-    width: 600px;
-    height: 600px;
-    background: #00F1C9;
-    border-radius: 50%;
-    z-index: -1;
-    margin-top: -73px;
-    margin-left: 37px;
-}
-
-.fixed-top-second{
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: rgb(243, 81, 148);
-  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  background: #00F1C9;
+  border-radius: 12px;
   z-index: -1;
-  margin-top: 8px;
-  margin-left: 680px;
+  margin-top: -220px;
+  margin-left: 100px;
 }
 
 
@@ -134,7 +119,6 @@ header h3 {
 main,
 .main {
   overflow: hidden;
-  width: 100%;
 }
 
 .section {
@@ -160,24 +144,6 @@ section.san-francisco {
   letter-spacing: -0.04em;
   color: #F0F0F0;
   z-index: -1;
-}
-.absolute-pro h2 {
-  font-size: 140px;
-  font-weight: 900;
-  letter-spacing: -0.04em;
-  color: #F0F0F0;
-  z-index: -1;
-  position:absolute;
-  bottom:-1000px;
-}
-.absolute-work h2 {
-  font-size: 140px;
-  font-weight: 900;
-  letter-spacing: -0.04em;
-  color: #F0F0F0;
-  z-index: -1;
-  position:absolute;
-  bottom:-1600px;
 }
 .lg-green {
   width: 160px;
@@ -253,7 +219,7 @@ section.san-francisco {
 
 
 .text-editor {
-  background: rgb(126, 123, 123);
+  background: #222;
   padding: 60px 50px;
   border-radius: 12px;
   margin-left: 15px;
@@ -265,11 +231,6 @@ code {
   background: none;
   border-radius: 0;
   color: #00F1C9;
-}
-
-.workContent h1{
-  text-align: center;
-  color: white;
 }
 
 
@@ -317,8 +278,7 @@ code {
 
 .share {
   position: relative;
-  top: 100px;
-  margin-bottom: 200px;
+  top: -240px;
 }
 .share a {
   font-size: 34px;
@@ -420,6 +380,64 @@ span.white {
   }
 }
 
+.network {
+  margin-bottom: 120px;
+}
+
+.network-card {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 220px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.75em;
+  margin-bottom: 7.5em;
+}
+
+.network-card__image--green {
+  background-color: #00F1C9;
+}
+
+.network-card__image {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -24px;
+  margin-left: 0;
+}
+
+.network-card__text {
+  margin-left: 1rem;
+  padding: 1rem;
+}
+.network-card__title {
+  color: #222;
+  margin-bottom: 28px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+}
+
+.network-card__description {
+  font-size: 16px;
+}
+.network-card__image--gradient {
+  background-image: linear-gradient(#00F1C9, #5000F1);
+}
+
+.network-card__image--purple {
+  background-color: #5000F1;
+}
+
+
 
 
 
@@ -441,15 +459,85 @@ span.white {
   Small devices: iPhone 6+ and below
 ------------------------------------*/
 
-@media (max-width: 400px) {
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-rendering: optimizeLegibility;
-    color: #222;
-    width:920px;
-  }
+@media (max-width: 767px) {
+header h1 {
+    font-size: 64px;
+}
+header .title a {
+  width: 100%;
+  margin-top: 24px;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.subtitle {
+  margin-top: 8px;
+}
+  .mt-200 {
+    margin-top: 60px;
+}
+.absolute h2 {
+  margin-left: -60px;
+}
+.lg-green {
+  margin-top: -60px;
+}
+.sm-purple {
+  width: 60px;
+  height: 60px;
+  background: #5000F1;
+  border-radius: 12px;
+  margin-left: -30px;
+  margin-top: 400px;
+}
+.temp {
+  margin-top: -50px;
+  font-size: 170px;
+  text-align: right;
+}
+
+.text-editor {
+  padding: 16px 16px;
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+code {
+  font-size: 12px;
+}
+
+.copy {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.share {
+  margin-top: 360px;
+}
+
+.network {
+  margin-bottom: 60px;
+}
+.network-card {
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+
+.network-card__image {
+  flex: 0 1 auto;
+}
+
+.network-card__text {
+  margin-top: 1.5rem;
+  margin-left: 0;
+  padding: 2rem;
+}
+
+
 
 }
 

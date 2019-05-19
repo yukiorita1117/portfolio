@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Yukio's Protfolio</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="canonical" href="https://dixonandmoe.com/rellax/">
+    <title>Vanilla Javascript Parallax Library — Rellax</title>
+    <meta name="title" content="Vanilla Javascript Parallax Library">
+    <meta name="description" content="Add a lightweight vanilla javascript parallax library to your website for subtle animations. Works with HTML, Wordpress, Shopify and more!">
+
+    <meta property="og:site_name" content="Vanilla Javascript Parallax Library — Rellax">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dixonandmoe.com/rellax/">
+    <meta property="og:title" content="Vanilla Javascript Parallax Library — Rellax">
+    <meta property="og:description" content="Add a lightweight vanilla javascript parallax library to your website for subtle animations. Works with HTML, Wordpress, Shopify and more!">
+    <meta property="og:image" content="https://dixonandmoe.com/assets/images/vanilla-javascript-parallax-library-e6cc0fb1.jpg">
+
+    <meta property="fb:app_id" content="">
+
+    <meta name="twitter:domain" content="dixonandmoe.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dixonandmoe.com/rellax/">
+    <meta name="twitter:title" content="Rellax — Vanilla Javascript Parallax Library">
+    <meta name="twitter:description" content="Add a lightweight vanilla javascript parallax library to your website for subtle animations. Works with HTML, Wordpress, Shopify and more!">
+    <meta name="twitter:image" content="https://dixonandmoe.com/assets/images/vanilla-javascript-parallax-library-e6cc0fb1.jpg">
+
+
+    <!-- Source Sans Pro -->
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css'>
 
     <!-- Booooooootstrap -->
@@ -14,28 +35,32 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- <link rel="stylesheet" href="css/smart.css" media="screen and (max-width:480px)"> -->
 
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
   </head>
 
   <body>
     <div class="grid">
       <div class="container">
         <div class="row">
-          <div class="col-md-offset-1 col-md-2">
+          <div class="col-xs-3 col-md-offset-1 col-md-2">
             <div class="grid-line"></div>
           </div>
-          <div class="col-md-2">
+          <div class="col-xs-3 col-md-2">
             <div class="grid-line"></div>
           </div>
-          <div class="col-md-2">
+          <div class="col-xs-3 col-md-2">
             <div class="grid-line"></div>
           </div>
-          <div class="col-md-2">
+          <div class="col-xs-3 col-md-2">
             <div class="grid-line"></div>
           </div>
-          <div class="col-md-2">
-            <div class="grid-line" style="margin-right:-30px;border-right:1px solid #ccc"></div>
+          <div class="col-xs-3 col-md-2">
+            <div class="grid-line grid-line--left"></div>
           </div>
         </div>
       </div>
@@ -45,18 +70,14 @@
       style="transform: rotate(45deg);"
     >
     </div>
-    <div class="fixed-top-second rellax" data-rellax-speed="-2"
-      style="transform: rotate(45deg);"
-    >
-    </div>
 
-    <div class="main">
+    <main class="main">
       <header>
         <div class="container">
           <div class="row">
-            <div class="col-md-offset-1 col-md-11">
-              <!-- <a href="http://dixonandmoe.com/"> -->
-                <h2>WEEEEELCOME! <span>↓</span></h2>
+            <div class="col-xs-12 col-md-offset-1 col-md-11">
+              <a href="http://dixonandmoe.com/">
+                <h2>BY DIXON & MOE <span>➔</span></h2>
               </a>
               <div class="white-block"></div>
             </div>
@@ -64,30 +85,35 @@
           <div class="title">
             <div class="row">
               <div class="col-md-offset-1 col-md-6">
-                <h1>YUKIO<br>PORTFOLIO
-                  <span></span>
-                </h1>
+                <h1 itemprop="name">RELLAX<span>JS</span></h1>
               </div>
               <div class="col-md-4 text-right">
-                <a href="https://www.wantedly.com/users/24156855">Wantedly</a>
+                <a href="https://github.com/dixonandmoe/rellax">GITHUB</a>
               </div>
             </div>
           </div>
           <div class="subtitle">
-            <div class="subtitle">
-              <h3>折田幸夫のポートフォリオにようこそ</h3>
-            </div>
+            <div class="row">
+              <div class="col-md-offset-1 col-md-2" itemprop="description">
+                <h3>Light (1021b gz)</h3>
+              </div>
+              <div class="col-md-2">
+                <h3>Vanilla Javascript</h3>
+              </div>
+              <div class="col-md-2">
+                <h3>Parallax Library</h3>
+              </div>
           </div>
         </div>
       </header>
 
 
-      <section class="section san-francisco">
+      <section class="section san-francisco" style="postition:static">
         <div class="absolute">
           <div class="container">
             <div class="row">
               <div class="col-md-offset-1 col-md-11">
-                <h2 class="rellax" data-rellax-speed="-3">TOKYO<br>From Japan</h2>
+                <h2 class="rellax" data-rellax-speed="-3">San Francisco<br>California</h2>
               </div>
             </div>
           </div>
@@ -97,36 +123,32 @@
           <div class="container">
             <div class="row">
 
-              <div class="col-md-offset-1 col-md-2">
-                <div class="lg-green rellax"
-                  data-rellax-speed="2"
-                  style="transform: rotate(45deg);">
-                </div>
-                <div class="sm-green rellax"
-                  data-rellax-speed="5"
-                  style="transform: rotate(45deg);">
-                </div>
+              <div class="col-xs-offset-5 col-md-offset-1 col-md-2 u-no-padding">
+                <div class="lg-green rellax" data-rellax-speed="2"style="transform: rotate(45deg);></div>
+                <div class="sm-purple rellax" data-rellax-speed="5" style="transform: rotate(45deg);"></div>
               </div>
 
-              <div class="col-md-offset-2 col-md-1">
+              <div class="col-xs-offset-8 col-md-offset-2 col-md-1 u-no-padding">
                 <div class="sm-purple rellax"
                   data-rellax-speed="2"
                   style="transform: rotate(45deg);">
                 </div>
               </div>
 
-              <div class="col-md-offset-3 col-md-1">
+              <div class="colx-xs-offset-2 col-md-offset-3 col-md-1 u-no-padding">
                 <div class="xs-green rellax"
                   data-rellax-speed="5"
                   style="transform: rotate(45deg);">
                 </div>
-                <div class="md-green rellax"
-                  data-rellax-speed="1"
-                  style="transform: rotate(45deg);">
+                <div class="col-xs-offset-12 col-md-offset-0 u-no-padding">
+                  <div class="md-green rellax"
+                    data-rellax-speed="1"
+                    style="transform: rotate(45deg);">
+                  </div>
                 </div>
               </div>
 
-              <div class="col-md-1">
+              <div class="col-md-1 u-no-padding">
                 <div class="lg-purple rellax"
                   data-rellax-speed="3"
                   style="transform: rotate(45deg);">
@@ -143,77 +165,21 @@
           <div class="row">
             <div class="col-md-offset-1 col-md-5">
               <div class="date">
-                YUKIO ORITA -<br>
-                Since 1993<br><br>
-                From Fukuoka
+                Incorporated—<br>
+                1850<br><br>
+                37°47′N 122°25′W
               </div>
             </div>
             <div class="col-md-offset-1 col-md-4">
               <div class="temp">
-                11<br>17
+                68°
               </div>
             </div>
           </div>
         </div>
 
+
       </section>
-
-
-      <section class="section san-francisco">
-          <div class="absolute-pro">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-offset-1 col-md-11">
-                  <h2>PROFILE</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="absolute above">
-            <div class="container">
-              <div class="row">
-  
-                <div class="col-md-offset-1 col-md-2">
-                  <div class="lg-green rellax"
-                    data-rellax-speed="2"
-                    style="transform: rotate(45deg);">
-                  </div>
-                  <div class="sm-green rellax"
-                    data-rellax-speed="5"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-                <div class="col-md-offset-2 col-md-1">
-                  <div class="sm-purple rellax"
-                    data-rellax-speed="2"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-                <div class="col-md-offset-3 col-md-1">
-                  <div class="xs-green rellax"
-                    data-rellax-speed="5"
-                    style="transform: rotate(45deg);">
-                  </div>
-                  <div class="md-green rellax"
-                    data-rellax-speed="1"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-                <div class="col-md-1">
-                  <div class="lg-purple rellax"
-                    data-rellax-speed="3"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-              </div>
-            </div>
-          </div>
-        </section>
 
 
       <section class="section">
@@ -221,166 +187,30 @@
       </section>
 
 
-      <section class="section san-francisco">
-          <div class="absolute-work">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-offset-1 col-md-11">
-                  <h2>WORK</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="absolute above">
-            <div class="container">
-              <div class="row">
-              </div>
-            </div>
-          </div>
-        </section>
       <section class="section">
-
-          <div class="absolute above" style="pointer-events: none;">
-            <div class="container">
-              <div class="row">
-  
-                <div class="col-md-offset-1 col-md-2">
-                  <div class="bt-green rellax"
-                    data-rellax-speed="5"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-                <div class="col-md-offset-0 col-md-1">
-                  <div class="md-dixonandmoe rellax"
-                    data-rellax-speed="2"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-                <div class="col-md-offset-5 col-md-1">
-                  <div class="md-twitter rellax"
-                    data-rellax-speed="1"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-                <div class="col-md-1">
-                  <div class="md-facebook rellax"
-                    data-rellax-speed="3"
-                    data-rellax-percentage="0.5"
-                    style="transform: rotate(45deg);">
-                  </div>
-                </div>
-  
-              </div>
-            </div>
-          </div>
-  
-          <div class="copy" style="margin-top: 200px;margin-bottom: 500px">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-offset-1 col-md-6">
-                  <h4>MY PROFOLE</h4>
-                  <p>折田幸夫<br>
-                      1993年生まれ、25歳。法政大学理工学部卒業。幼少期からグラフィックデザイナーの両親の元、デザインに親しむ。高校卒業後、画塾にてデザインの基礎を学ぶ。
-                      学生時代、デザイナーとして、FRAME LUNCH.incの案件としてTOYOTAのLPサイト製作、総合エンターテイメント事務所Ambitious productionのグラフィックデザイン制作等を行う。老舗受託系開発会社入社後、システムエンジニアとしてweb上でVR体験を可能にするWebVR開発、Autodesk Revit、Autodesk Civilのコマンドシステム開発、大手建設メーカーのUnityを用いたアプリケーション開発等、幅広く経験。</p>
-                </div>
-              </div>
-  
-              <div class="row" style="margin-top: 140px">
-                <div class="col-md-offset-5 col-md-6">
-                  <h4>開発スキル</h4>
-                  <p>
-                    ・Adobe illustrator、Adobe Photoshop、Adobe XD<br>
-                    ・HTML5、CSS3、PHP、Sass<br>
-                    ・JavaScript、JQuery、Vue.js、Vuetify.js<br>
-                    ・C#、Unity<br>
-                    ・Android開発<br>
-                    <br>
-                    <h4>取得資格</h4>
-                    <p>
-                    ・Oracle Master Broze DBA<br>
-                    ・ITパスポート<br>
-                    </p>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-      <section class="section">
-        <div style="margin-top: 200px">
+        <div class="mt-200">
           <div class="container">
 
               <div class="row">
-
-                  <div class="absolute above">
-                      <div class="container">
-                        <div class="row">
-            
-                          <div class="col-md-offset-1 col-md-2">
-                            <div class="lg-green rellax"
-                              data-rellax-speed="2"
-                              style="transform: rotate(45deg);">
-                            </div>
-                            <div class="sm-green rellax"
-                              data-rellax-speed="5"
-                              style="transform: rotate(45deg);">
-                            </div>
-                          </div>
-            
-                          <div class="col-md-offset-2 col-md-1">
-                            <div class="sm-purple rellax"
-                              data-rellax-speed="2"
-                              style="transform: rotate(45deg);">
-                            </div>
-                          </div>
-            
-                          <div class="col-md-offset-3 col-md-1">
-                            <div class="xs-green rellax"
-                              data-rellax-speed="5"
-                              style="transform: rotate(45deg);">
-                            </div>
-                            <div class="md-green rellax"
-                              data-rellax-speed="1"
-                              style="transform: rotate(45deg);">
-                            </div>
-                          </div>
-            
-                          <div class="col-md-1">
-                            <div class="lg-purple rellax"
-                              data-rellax-speed="3"
-                              style="transform: rotate(45deg);">
-                            </div>
-                          </div>
-            
-                        </div>
-                      </div>
-                    </div>
-
                 <div class="col-md-12 text-center">
-                  <h4>MY WORKS</h4>
+                  <h4>Javascript (accepts any class name)</h4>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-offset-2 col-md-8">
-                  <div class="text-editor workContent">
-                    <h1>Coming Soon ....</h1>
-                    <!-- <code>
-                    </code> -->
+                  <div class="text-editor">
+                    <code>
+                      <span class="purple">var</span> rellax = <span class="green">new</span> <span class="white">Rellax</span>('.rellax');
+                    </code>
                   </div>
                 </div>
               </div>
 
 
-              <!-- <div class="row">
+              <div class="row">
                 <div class="col-md-12 text-center" style="margin-top:80px">
-                  <h4>BASIC MARKUP (DEFAULT SPEED: -2)</h4>
+                  <h4>Basic Markup (default Speed: -4)</h4>
                 </div>
               </div>
 
@@ -394,12 +224,12 @@
                     </code>
                   </div>
                 </div>
-              </div> -->
+              </div>
 
 
-              <!-- <div class="row">
+              <div class="row">
                 <div class="col-md-12 text-center" style="margin-top:40px">
-                  <h4>OPTIONAL SPEED (-10 to +10)</h4>
+                  <h4>Optional Speed (-10 to +10)</h4>
                 </div>
               </div>
 
@@ -407,50 +237,184 @@
                 <div class="col-md-offset-2 col-md-8">
                   <div class="text-editor">
                     <code>
-                      &lt;div <span class="purple">class</span>="<span class="green">rellax</span>" <span class="purple">data-rellax-speed</span>="<span class="green">6</span>"&gt;<br>
-                      <span class="white">&nbsp;&nbsp;I’m slow and smooth</span><br>
+                      &lt;div <span class="purple">class</span>="<span class="green">rellax</span>" <span class="purple">data-rellax-speed</span>="<span class="green">-7</span>"&gt;<br>
+                      <span class="white">&nbsp;&nbsp;I’m extra slow and smooth</span><br>
                       &lt;/div&gt;
                     </code>
                   </div>
                 </div>
-              </div> -->
+              </div>
 
+            </div>
           </div>
         </div>
-        
       </section>
 
 
+
+      <section class="section">
+
+        <div class="absolute above mobile-hide" style="pointer-events: none;">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-offset-1 col-md-2 u-no-padding">
+                <div class="bt-green rellax"
+                  data-rellax-speed="5"
+                  style="transform: rotate(45deg);">
+                </div>
+              </div>
+
+              <div class="col-md-offset-0 col-md-1 u-no-padding">
+                <div class="md-dixonandmoe rellax"
+                  data-rellax-speed="2"
+                  style="transform: rotate(45deg);">
+                </div>
+              </div>
+
+              <div class="col-md-offset-5 col-md-1 u-no-padding">
+                <div class="md-twitter rellax"
+                  data-rellax-speed="1"
+                  style="transform: rotate(45deg);">
+                </div>
+              </div>
+
+              <div class="col-md-1 u-no-padding">
+                <div class="md-facebook rellax"
+                  data-rellax-speed="3"
+                  style="transform: rotate(45deg);">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="copy">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-offset-1 col-md-6">
+                <h4>SERIOUSLY, WHY?!</h4>
+                <p>Come on, how boring is the internet without gratuitous javascript? We made this library since too many github repos are abandoned (RIP skrollr) or feature creepy. You got some beef or caught us slippin on unit tests, send rants and 10mb gifs to <a href="mailto:moe@dixonandmoe.">moe@dixonandmoe.com</a></p>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 140px">
+              <div class="col-md-offset-5 col-md-6">
+                <h4>BUT ACTUALLY</h4>
+                <p>We've benefitted so much from open source projects and developers that we're actively trying to give back and we're starting by releasing our own quirky js code.</p>
+              </div>
+            </div>
+          </div>
+      </section>
 
       <section class="share">
         <div class="container">
           <div class="row">
             <div class="col-md-offset-1 col-md-3">
-              <a class="dam" href="">CONTACT<span>➔</span></a>
+              <span class="dam">By <a class="dam" href="https://moeamaya.com/">Moe</a> @ <a class="dam" href="/">Dixon & Moe</a></span>
             </div>
             <div class="col-md-offset-3 col-md-2">
-              <a href="">Mail <span>➔</span></a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://dixonandmoe.com/rellax">Share <span>➔</span></a>
             </div>
             <div class="col-md-offset-0 col-md-2">
-              <a href="">FB<span>➔</span></a>
+              <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdixonandmoe.com%2Frellax%2F&via=dixonandmoe&text=Parallax%20all%20the%20things%20with%20Rellax.js&hashtags=webdev%20parallax">Tweet <span>➔</span></a>
+            </div>
+          </div>
+      </section>
+
+      <footer class="network">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <article class="network-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <figure class="network-card__image network-card__image--green" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                </figure>
+                <div class="network-card__text">
+                  <h3 class="network-card__title" itemprop="name">Cool Backgrounds</h3>
+                  <p class="network-card__description" itemprop="description">Fun tool to create backgrounds whether you need a dark <a href="https://coolbackgrounds.io/black-background/" target="_blank" rel="noopener">black background</a> or bright <a href="https://coolbackgrounds.io/blue-background/" target="_blank" rel="noopener">blue background</a>.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <article class="network-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <figure class="network-card__image network-card__image--gradient" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                </figure>
+                <div class="network-card__text">
+                  <h3 class="network-card__title" itemprop="name">CSS Gradient</h3>
+                  <p class="network-card__description" itemprop="description">Adding gradients to your site? <a href="https://cssgradient.io" title="CSS Gradient – Learn how to create css gradients for the web" target="_blank" rel="noopener">CSS Gradient</a> is a happy little tool to help you generate css gradients for your website design.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <article class="network-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <figure class="network-card__image network-card__image--purple" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                </figure>
+                <div class="network-card__text">
+                  <h3 class="network-card__title" itemprop="name">Service List</h3>
+                  <p class="network-card__description" itemprop="description">Need help with design tasks? Service List is a site to compare companies that offer <a href="https://servicelist.io" title="CSS Gradient – Learn how to create css gradients for the web" target="_blank" rel="noopener">unlimited graphic design</a> and other online services.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <article class="network-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <figure class="network-card__image network-card__image--green" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="/assets/images/gpa-calculator-8e74acd8.svg" alt="Gpa calculator" />
+                </figure>
+                <div class="network-card__text">
+                  <h3 class="network-card__title" itemprop="name">GPA Calculator</h3>
+                  <p class="network-card__description" itemprop="description">Use our online <a href="https://gpacalculator.io" title="GPA Calculator" target="_blank" rel="noopener">GPA Calculator</a> to calculate high school, college and cumulative GPA along with class grade and what you'll need on the final.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <article class="network-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <figure class="network-card__image network-card__image--purple" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="/assets/images/word-counter-c139cf4c.svg" alt="Word counter" />
+                </figure>
+                <div class="network-card__text">
+                  <h3 class="network-card__title" itemprop="name">Word Counter</h3>
+                  <p class="network-card__description" itemprop="description">Count words, characters and pages in real time with <a href="https://wordcounter.io" title="Word Counter – Count, Spellcheck and Improve Your Writing" target="_blank" rel="noopener">Word Counter</a>, our online editor featuring keyword density, auto spellcheck and more.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <article class="network-card" itemscope itemtype="https://schema.org/CreativeWork">
+                <figure class="network-card__image network-card__image--green" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                  <img src="/assets/images/lorem-ipsum-ccd73253.svg" alt="Lorem ipsum" />
+                </figure>
+                <div class="network-card__text">
+                  <h3 class="network-card__title" itemprop="name">Lorem Ipsum</h3>
+                  <p class="network-card__description" itemprop="description">An updated version of the classic placeholder text generator, <a href="https://loremipsum.io/" title="Lorem Ipsum – Discover its Origins and Generate Your Own" target="_blank" rel="noopener">Lorem Ipsum</a> is the perfect tool for all your prototyping needs.</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-      </section>
-
-    </div>
+      </footer>
+    </main>
 
 
     <!-- javascript -->
-    <script type="text/javascript" src="rellax.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/rellax.min-165faf51.js"></script>
+    <script type="text/javascript" src="/javascripts/rellax.min.js"></script>
+
     <script>
-    	var rellax = new Rellax('.rellax', {
-        // center: true
-        callback: function(position) {
-            // callback every position change
-            console.log(position);
-        }
-      });
+      // Need DEBUG for old version of Rellax.js
+      var DEBUG = false;
+      var rellax = new Rellax('.rellax');
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64800746-1', 'auto');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
     </script>
 
 
